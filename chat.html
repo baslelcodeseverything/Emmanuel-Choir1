@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Choir Chat</title><link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <h2>Choir Chat</h2>
+  <div id="status">Checking...</div>
+  <div id="chatBox" style="display:none;">
+    <div id="messages" style="height:300px;overflow:auto;border:1px solid #ddd;padding:8px;margin-bottom:8px;"></div>
+    <form id="msgForm"><input id="msgInp" placeholder="Message"><button>Send</button></form>
+    <p><button id="logoutBtn">Logout</button></p>
+    <p>Upload profile photo: <input id="photo" type="file"><button id="up">Upload</button></p>
+  </div>
+  <p><a href="/">Home</a></p>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body></html>
